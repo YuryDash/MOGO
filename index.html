@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link type="Image/x-icon" href="/img/favico/favicon.ico" rel="icon">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>Hello, I'am</title>
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="start">
         <div class="container">
             <ul class="header__list">
-                <li>Projects</li>
-                <li>Blog</li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#blog__one">blog</a></li>
             </ul>
         </div>
     </header>
@@ -24,7 +30,7 @@
             <div class="about__box">
                 <div class="about__hello">
                     <p class="hello">Hello, I’m Yury Daszukiewicz.</p>
-                    <p class="text">I’m a Web Developer, based in India. Here to Remove Boring Websites Off The Internet, One by One.</p>
+                    <p class="text">I’m a Web Developer, based in Belarus. Here to Remove Boring Websites Off The Internet, One by One.</p>
                     <div class="github">
                         <div class="github__text">Github</div>
                         <div class="github__logo">
@@ -37,6 +43,47 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="blog" id="blog__one">
+        <div class="container">
+            <div class="blog__blog">
+                <div class="blog__ico">
+                    blog
+                </div>
+
+                <div class="blog__back">
+                    <a href="#start"><img src="/img/backspace.png" alt="backspace img"></a>
+                </div>
+            </div>
+
+            <div class="cont__padding">
+            <div class="blog__title">
+                <p>The Ultimate Tutorial on JavaScript DOM - JS DOM with Examples</p>
+                <span>Sep 1, 2020</span>
+            </div>
+            <div class="blog__dom">
+                <p class="blog__dom--title">What is the dom?</p>
+                <div class="blog__dom--text">
+                    <p>
+                        One of my ways of explaining the DOM is with this short Alien Invasion story I made up.
+                    </p>
+
+                    <p>
+                        A couple of aliens invaded Earth. The aliens bring some sort of writing to warn humans of an imminent apocalypse. However, the humans do not know what the writing says. So the aliens translates it into a human readable language and also makes it a model for translation, just in case they decide to come back in future.
+                    </p>
+
+                    <p>
+                        Comparing this to the web: the alien language is the HTML, the translation is the DOM, and the human is JavaScript.
+                    </p>
+                </div>
+
+            </div>
+            <div class="blog__img">
+                <img src="/img/Screenshot 2021-09-01 at 8.01 1.png" alt="img-screenshot">
+            </div>
+        </div>
+    </div>
     </section>
 </body>
 </html>

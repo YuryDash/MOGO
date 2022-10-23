@@ -33,20 +33,190 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
-/*=======================Обнуление===============*/
-/*==CONTAINER==*/
+/*=======================Обнуление======================*/
+body{
+    padding-top: 60px;
+}
+/*====CONTAINER==*/
 .container{
     max-width: 1152px;
+    margin: 0 auto;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+
 }
-/*==CONTAINER==*/
+/*====CONTAINER==*/
 
 
-/*============================HEADER=========================*/
-
+/*=======================HEADER======================*/
 .header {
 
     &__list {
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding-right: 103px;
+        padding-top: 60px;
+        li{
+
+
+        }
+
+        a{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 35px;
+            color: aliceblue;
+            opacity: 0.8;
+        }
+        a:hover{
+            color: #fff;
+            opacity: 1;
+        }
+    }
+}
+/*=======================HEADER======================*/
+
+/*=======================ABOUT======================*/
+.about {
+
+    &__box {
+        max-height: 600px;
+
+        margin-left: 60px;
+        display: flex;
+    }
+
+    &__hello {
+        opacity: 1;
+
+        margin-top: 65px;
+    }
+
+    &__img {
+        position: relative;
+        top: -85px;
+        left: -80px;
+        z-index: 1;
     }
 }
 .container {
 }
+.hello {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+.text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-top: 30px;
+}
+.github {
+    opacity: 0.7;
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-right: 11px;
+
+    }
+
+    &__logo {
+
+    }
+}
+
+
+/*=======================ABOUT======================*/
+
+
+/*=======================BLOG======================*/
+
+.blog {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .cont__padding{
+        padding: 0px 175px;
+    }
+
+    &__blog {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 56px 47px 40px 31px;
+
+    }
+
+    &__ico {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    &__back {
+    }
+
+    &__title {
+
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        
+        span{
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+
+            color: #808080;
+        }
+    }
+
+    &__dom {
+        padding-top: 30px;
+    }
+
+    &__dom--title {
+        font-weight: 700;
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+
+    &__dom--text {
+        font-weight: 500;
+        font-size: 20px;
+        p{
+            padding-bottom: 30px;
+            line-height: 30.38px;
+            letter-spacing: 1.2px;
+        }
+    }
+}
+
+.blog {
+
+    &__img {
+        padding: 40px 0px;
+    }
+}
+
+.container {
+}
+
+/*=======================BLOG======================*/
+
+
+
